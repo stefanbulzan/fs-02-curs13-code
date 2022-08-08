@@ -1,6 +1,7 @@
 package ro.fasttrackit.curs13.service.api;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
@@ -12,6 +13,7 @@ import ro.fasttrackit.curs13.service.api.model.CountryApiModel;
 import java.util.List;
 import java.util.Optional;
 
+@Profile("live")
 @Service
 @RequiredArgsConstructor
 public class CountryApi {
